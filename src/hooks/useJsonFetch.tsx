@@ -7,20 +7,20 @@ const useJsonFetch = (url: string, opts: RequestInit) => {
 
   const responseHandler = (response: Response) => {
     if(!response.ok) {
-      throw new Error(`${response.status}`) //response.statusText пустой     
+      throw new Error(`${response.status}`)  
     }
 
     response.json().then((data) => setData(data));
   }
 
-  useEffect(() => {
+  useEffect(() => {    
     fetch(url, opts)
       .then((response) => responseHandler(response))
       .catch((error) => {setError(error.message)})
       .finally(() => setLoading(false));
-  }, [url, opts]);
-
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+          // React Hook useEffect has missing dependencies: 'opts' and 'url'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
   return [data, loading, error];
 };
 
-export default useJsonFetch;
+export default useJsonFetch; 
