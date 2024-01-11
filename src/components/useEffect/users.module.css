@@ -1,0 +1,26 @@
+.user {
+  border: 1px solid rgb(220, 219, 219);
+  border-bottom: none;
+  padding: 20px;
+  cursor: pointer;
+  list-style-type: none;
+  text-align: left;
+}
+
+.user:last-child {
+  border-bottom: 1px solid rgb(220, 219, 219);
+  margin-bottom: 30px;
+}
+
+.users {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.selected {
+  background-color: rgb(15,127,250);
+  color: white;
+}
+
+
+

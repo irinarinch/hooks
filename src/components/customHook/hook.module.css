@@ -1,0 +1,21 @@
+.loading {
+  margin: 20px;
+  padding: 30px 20px;
+  background-color: rgb(247, 242, 181);
+}
+
+.data {
+  margin: 20px;
+  padding: 30px 20px;
+  background-color: rgb(202, 246, 207);
+}
+
+.error {
+  margin: 20px;
+  padding: 30px 20px;
+  background-color: rgb(246, 202, 204);
+}
+
+.container {
+  
+}
